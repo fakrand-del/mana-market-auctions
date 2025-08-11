@@ -27,7 +27,7 @@ export const FeaturedCarousel = () => {
           const buyNow = Math.round(usd * 1.05);
           const endsAt = new Date(Date.now() + (30 + Math.floor(Math.random() * 300)) * 60 * 1000).toISOString();
           return {
-            id: encodeURIComponent(card.name as string),
+            id: card.name as string,
             name: card.name,
             set: card.set_name,
             rarity: (card.rarity || "rare") as AuctionItem["rarity"],

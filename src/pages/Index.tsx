@@ -5,8 +5,10 @@ import { SearchFilters } from "@/components/home/SearchFilters";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
@@ -31,7 +33,7 @@ const Index = () => {
         </section>
 
         <div className="mt-10 space-y-10">
-          <SearchFilters />
+          <SearchFilters onSearch={(q) => navigate(`/auction/${encodeURIComponent(q)}`)} />
           <FeaturedCarousel />
 
           <section aria-label="Listas" className="container mx-auto grid gap-6 md:grid-cols-2">

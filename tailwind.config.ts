@@ -25,37 +25,41 @@ export default {
         sans: ["Inter", "ui-sans-serif", "system-ui"],
         heading: ["Cinzel", "serif"], // para títulos con estética coleccionismo/fantasía
       },
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "#6B46C1", // morado principal Mana Market
-          foreground: "#FFFFFF",
+        colors: {
+          border: "hsl(var(--border))",
+          input: "hsl(var(--input))",
+          ring: "hsl(var(--ring))",
+          background: "hsl(var(--background))",
+          foreground: "hsl(var(--foreground))",
+          primary: {
+            DEFAULT: "hsl(var(--primary))",
+            foreground: "hsl(var(--primary-foreground))",
+          },
+          secondary: {
+            DEFAULT: "hsl(var(--secondary))",
+            foreground: "hsl(var(--secondary-foreground))",
+          },
+          destructive: {
+            DEFAULT: "hsl(var(--destructive))",
+            foreground: "hsl(var(--destructive-foreground))",
+          },
+          muted: {
+            DEFAULT: "hsl(var(--muted))",
+            foreground: "hsl(var(--muted-foreground))",
+          },
+          accent: {
+            DEFAULT: "hsl(var(--accent))",
+            foreground: "hsl(var(--accent-foreground))",
+          },
+          card: {
+            DEFAULT: "hsl(var(--card))",
+            foreground: "hsl(var(--card-foreground))",
+          },
+          popover: {
+            DEFAULT: "hsl(var(--popover))",
+            foreground: "hsl(var(--popover-foreground))",
+          },
         },
-        secondary: {
-          DEFAULT: "#FFD700", // dorado para rareza/elementos destacados
-          foreground: "#000000",
-        },
-        success: {
-          DEFAULT: "#4CAF50",
-          foreground: "#FFFFFF",
-        },
-        warning: {
-          DEFAULT: "#FF9800",
-          foreground: "#000000",
-        },
-        destructive: {
-          DEFAULT: "#DC2626",
-          foreground: "#FFFFFF",
-        },
-        muted: {
-          DEFAULT: "#E5E7EB",
-          foreground: "#374151",
-        },
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
